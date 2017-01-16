@@ -1,0 +1,239 @@
+body {
+}
+p{
+    letter-spacing:1px;
+}
+.bottom-fix {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.header {
+    background-color: #111519;
+    opacity: 0.83;
+    height: 80px;
+    border: none;
+}
+
+#headerItems {
+    margin-top: 15px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #2e9de0;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: rgba(30, 30, 30, 0) !important;
+    font-weight:bold;
+}
+
+.main-section {
+    background: linear-gradient(to bottom, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-size: cover;
+}
+
+.section-content {
+    display: table-cell;
+    padding-left: 10%;
+}
+
+.main-section-padding {
+    padding-top: 200px;
+}
+
+.section-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.h1-font {
+    font-size: 60px;
+}
+
+.section-content p {
+    font-size: 20px;
+}
+/*for white container*/
+.white-bg {
+    background-color: white;
+}
+
+    .white-bg p {
+        color: #58798c;
+    }
+
+    .white-bg h1 {
+        color: #3295be;
+    }
+
+    .white-bg h2 {
+        color: #3295be;
+    }
+    .white-bg h3{
+        color:#58798c;
+    }
+
+/*for blue container*/
+.blue-bg {
+    background: linear-gradient(to bottom, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+    color: white;
+}
+
+.white-font {
+    color: white;
+}
+
+.box {
+    border: 1px solid #89bbd3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top:10px;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+    .box:hover {
+        background: rgba(255,255,255,0.1);
+    }
+
+.link-image {
+    width: 15px;
+    height: 15px;
+}
+
+.box .small{
+    color:#95c5db;
+}
+.box p{
+    color:#95c5db;
+}
+.box a{
+    color:white;
+    text-decoration:none;
+}
+.box a :hover{
+    color:black;
+}
+
+.progress{
+    border-radius:0;
+    margin-bottom:30px !important;
+}
+.progress-bar{
+    background:linear-gradient(to right, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+    font-size:15px;
+    font-weight:bolder;
+    
+}
+.portfolio-box{
+    border: 1px solid #8f9394;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top:10px;
+    transition: all ease 0.5s;
+    max-width:50%;
+    max-height:50%;
+    margin-left:10%;
+}
+.portfolio-box img{
+    border-radius:10px;
+    width:100%;
+}
+.custom-gmail{
+    font-size:30px;
+    text-decoration:none !important;
+}
+.custom-gmail:hover,.custom-gmail:focus{
+    color:red;
+}
+
+.fa-icons a{
+    font-size:30px;
+    text-decoration:none;
+    margin-right:20px;
+}
+
+.fa-icons a :hover, .fa-icons a:focus{
+    font-size:35px;
+}
+
+
+
+/*-----------------------------------------------------*/
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/*------------------------------------------*/
+
+@media only screen and (max-width: 800px) {
+    .section-content h1 {
+        font-size: 40px;
+    }
+
+    .main-section {
+        height: 750px;
+    }
+
+    .main-section-padding {
+        padding-top: 150px;
+    }
+}
+@media only screen and (max-width: 767px) {
+
+    .navbar-inverse .navbar-nav>li>a{
+        background:rgba(30, 30, 30, 1) !important;
+    }
+    .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+        background:rgba(30, 30, 30, 1) !important;
+        color:white;
+    }
+    .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover{
+        background:rgba(30, 30, 30, 1) !important
+    }
+}
